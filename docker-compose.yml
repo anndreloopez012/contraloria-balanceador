@@ -6,7 +6,6 @@ services:
     container_name: lb_contraloria
     restart: always
     ports:
-      - "80:80"
       - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
